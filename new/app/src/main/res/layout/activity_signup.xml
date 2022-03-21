@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity_login">
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:src="@drawable/fouraj"
+        />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:textColorHint="@color/grey"
+        android:theme="@style/Theme.AppCompat"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Email"
+        android:textColorHint="@color/grey"
+        android:theme="@style/Theme.AppCompat"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/grey"
+        android:theme="@style/Theme.AppCompat"
+        android:textSize="20sp"
+        android:hint="Enter your Password"
+        android:inputType="textPassword"
+
+        />
+    <EditText
+        android:id="@+id/secondPassword"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/grey"
+        android:theme="@style/Theme.AppCompat"
+        android:textSize="20sp"
+        android:hint="Confirm your Password"
+        android:inputType="textPassword"
+
+        />
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/grey"
+        android:theme="@style/Theme.AppCompat"
+        android:textSize="20sp"
+        android:hint="Enter your phone number"
+
+        />
+
+    <Button
+        android:id="@+id/button_signup"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_frame_shape_signup"
+        android:text="Sign Up"
+        android:layout_marginTop ="100dp"
+        />
+
+
+</LinearLayout>

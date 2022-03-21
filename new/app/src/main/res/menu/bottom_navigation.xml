@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_calendar"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Calendar"
+    />
+
+    <item
+        android:id="@+id/nav_community"
+        android:icon="@drawable/ic_baseline_add_community_24"
+        android:title="Community"
+        />
+
+    <item
+        android:id="@+id/nav_me"
+        android:icon="@drawable/ic_baseline_me_ind_24"
+        android:title="Me"
+        />
+
+
+
+</menu>

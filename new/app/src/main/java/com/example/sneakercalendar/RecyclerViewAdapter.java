@@ -1,11 +1,14 @@
 package com.example.sneakercalendar;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -39,6 +42,18 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         //找到item的布局
         View view = LayoutInflater.from(context).inflate(R.layout.item_layout, parent, false);
+
+       /**final MyViewHolder myViewHolder = new MyViewHolder(view);
+        myViewHolder.imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int position = myViewHolder.getAdapterPosition();
+                Menu menu = list.get(position);
+                Toast.makeText(view.getContext(), "you clicked ImageView: " , Toast.LENGTH_SHORT).show();
+
+            }
+        });
+**/
         return new MyViewHolder(view);//将布局设置给holder
     }
 

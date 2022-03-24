@@ -3,10 +3,16 @@ package com.example.sneakercalendar;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
+import com.example.sneakercalendar.DataServer.DBOpenHelper;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.recyclerview.widget.DefaultItemAnimator;
@@ -70,10 +76,25 @@ public class activity_calendar extends AppCompatActivity {
     }
 
     private void initData(){
+
+        DBOpenHelper dbsqlLiteOpenHelper = new DBOpenHelper(activity_calendar.this,"my.db",null,1);
+        final SQLiteDatabase db = dbsqlLiteOpenHelper.getReadableDatabase();
+
+       // Cursor cursor = db.query("sneaker",new String[]{"title","price","date","image","link"},"title=?",new String[]{"title"},null,null,null);
+        Cursor cursor = db.query("sneaker", new String[]{"title","price","date","image","link"}, null, null, null, null, null);
         list = new ArrayList<>();
-        String imgUrl = "https://media.gq.com/photos/5ff89044efcefc18ea841495/master/w_960,c_limit/SP21_Nike_Sportswear_Dunk_27_original%20(1).jpg";
-        for (int i = 0; i < 50; i++) {
-            list.add(new Menu("Nike dunk" + i,"110",imgUrl));
-        }
+        while (cursor.moveToNext()){
+            @SuppressLint("Range") String title = cursor.getString(cursor.getColumnIndex("title"));
+            @SuppressLint("Range") String date = cursor.getString(cursor.getColumnIndex("date"));
+            @SuppressLint("Range") int price = cursor.getInt(cursor.getColumnIndex("price"));
+            @SuppressLint("Range") String image = cursor.getString(cursor.getColumnIndex("image"));
+            @SuppressLint("Range") String link = cursor.getString(cursor.getColumnIndex("link"));
+            String priceStr = Integer.toString(price);
+                list.add(new Menu(title,priceStr ,image));
+
+
+       }
+
+
     }
 }

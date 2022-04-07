@@ -1,2 +1,0 @@
-# SneakerCalendar
-Senior Seminar Project

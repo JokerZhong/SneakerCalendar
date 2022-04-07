@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.sneakercalendar.DataServer.DBOpenHelper;
@@ -34,6 +35,7 @@ public class activity_me extends AppCompatActivity {
     private RecyclerViewAdapter adapter;
     private RecyclerView recyclerView;
     private List<Menu> list;
+    private ImageView img_fwler,img_fol;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,25 @@ public class activity_me extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
         bottomNavigationView.setSelectedItemId(R.id.nav_me);
+
+         img_fwler = findViewById(R.id.follower);
+         img_fol = findViewById(R.id.following);
+
+         img_fwler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(activity_me.this,follower_page.class);
+                startActivity(intent);
+            }
+        });
+
+         img_fol.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(activity_me.this,following_page.class);
+                startActivity(intent);
+            }
+        });
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

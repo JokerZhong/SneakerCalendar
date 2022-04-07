@@ -79,6 +79,7 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/following"
                         android:layout_width="32dp"
                         android:layout_height="32dp"
                         android:layout_gravity="center"
@@ -111,6 +112,7 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/follower"
                         android:layout_width="32dp"
                         android:layout_height="32dp"
                         android:layout_gravity="center"

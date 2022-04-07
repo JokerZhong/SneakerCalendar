@@ -8,15 +8,12 @@
     style="@style/CardView.Light"
     android:layout_marginTop="8dp"
     android:layout_marginStart="8dp"
-    android:layout_marginEnd="8dp"
-    tools:context=".wishlist"
-    tools:ignore="NamespaceTypo">
+    android:layout_marginEnd="8dp">
 
     <ImageView
         android:id="@+id/favImageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src=""
         android:scaleType="centerCrop"/>
 
     <TextView

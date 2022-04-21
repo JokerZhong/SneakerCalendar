@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/drawable/button_frame_shape_login.xml" value="0.2215" />
+        <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/drawable/button_frame_shape_signup.xml" value="0.2215" />
+        <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/drawable/edittext_button_style_rounded.xml" value="0.2215" />
+        <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/drawable/login_bg.xml" value="0.2215" />
         <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/layout/activity_calendar.xml" value="0.2692502532928065" />
         <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/layout/activity_community.xml" value="0.2692502532928065" />
         <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/layout/activity_follower_page.xml" value="0.5536458333333333" />

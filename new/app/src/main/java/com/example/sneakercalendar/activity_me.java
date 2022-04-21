@@ -12,7 +12,6 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.sneakercalendar.DataServer.DBOpenHelper;
@@ -20,6 +19,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.like.LikeButton;
 import com.like.OnLikeListener;
 
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
@@ -35,7 +35,7 @@ public class activity_me extends AppCompatActivity {
     private RecyclerViewAdapter adapter;
     private RecyclerView recyclerView;
     private List<Menu> list;
-    private ImageView img_fwler,img_fol;
+    CardView btn1,btn2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,25 +47,6 @@ public class activity_me extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
         bottomNavigationView.setSelectedItemId(R.id.nav_me);
-
-         img_fwler = findViewById(R.id.follower);
-         img_fol = findViewById(R.id.following);
-
-         img_fwler.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(activity_me.this,follower_page.class);
-                startActivity(intent);
-            }
-        });
-
-         img_fol.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(activity_me.this,following_page.class);
-                startActivity(intent);
-            }
-        });
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -89,7 +70,27 @@ public class activity_me extends AppCompatActivity {
                 return false;
             }
         });
+
+        btn1 = findViewById(R.id.f1);
+        btn2 = findViewById(R.id.f2);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(activity_me.this, following_page.class);
+                startActivity(intent);
+            }
+        });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(activity_me.this, follower_page.class);
+                startActivity(intent);
+            }
+        });
+
     }
+
+
 
     private void initView(){
         recyclerView = (RecyclerView)findViewById(R.id.recyclerView);

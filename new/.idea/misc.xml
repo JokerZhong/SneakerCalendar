@@ -3,16 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/layout/activity_calendar.xml" value="0.3686594202898551" />
-        <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/layout/activity_community.xml" value="0.3686594202898551" />
-        <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/layout/activity_home.xml" value="0.3686594202898551" />
-        <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/layout/activity_login.xml" value="0.3686594202898551" />
-        <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/layout/activity_me.xml" value="0.3686594202898551" />
-        <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/layout/activity_signup.xml" value="0.3686594202898551" />
-        <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/layout/follower_page.xml" value="0.26874366767983787" />
-        <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/layout/following_page.xml" value="0.26874366767983787" />
-        <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/layout/item_layout.xml" value="0.3686594202898551" />
-        <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/menu/bottom_navigation.xml" value="0.48385416666666664" />
+        <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/layout/activity_calendar.xml" value="0.2692502532928065" />
+        <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/layout/activity_community.xml" value="0.2692502532928065" />
+        <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/layout/activity_follower_page.xml" value="0.5536458333333333" />
+        <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/layout/activity_following_page.xml" value="0.5536458333333333" />
+        <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/layout/activity_me.xml" value="0.2692502532928065" />
+        <entry key="..\:/Campus Project/SneakerCalendar/new/app/src/main/res/layout/layout.xml" value="0.5536458333333333" />
+        <entry key="..\:/Users/28348/Desktop/new(1)/new/app/src/main/res/drawable/edittext_button_style_rounded.xml" value="0.1" />
+        <entry key="..\:/Users/28348/Desktop/new(1)/new/app/src/main/res/layout/activity_community.xml" value="0.5" />
+        <entry key="..\:/Users/28348/Desktop/new(1)/new/app/src/main/res/layout/activity_follower_page.xml" value="0.3292572463768116" />
+        <entry key="..\:/Users/28348/Desktop/new(1)/new/app/src/main/res/layout/activity_following_page.xml" value="0.3292572463768116" />
+        <entry key="..\:/Users/28348/Desktop/new(1)/new/app/src/main/res/layout/activity_home.xml" value="0.3292572463768116" />
+        <entry key="..\:/Users/28348/Desktop/new(1)/new/app/src/main/res/layout/activity_me.xml" value="0.3729166666666667" />
+        <entry key="..\:/Users/28348/Desktop/new(1)/new/app/src/main/res/layout/item_layout.xml" value="0.3729166666666667" />
         <entry key="app/src/main/res/drawable/button_frame_shape_login.xml" value="0.2984375" />
         <entry key="app/src/main/res/drawable/button_frame_shape_signup.xml" value="0.2984375" />
         <entry key="app/src/main/res/drawable/gradient.xml" value="0.20462962962962963" />
@@ -25,6 +28,8 @@
         <entry key="app/src/main/res/font/montserrat_bold.xml" value="0.20462962962962963" />
         <entry key="app/src/main/res/layout/activity_calendar.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_community.xml" value="0.19322916666666667" />
+        <entry key="app/src/main/res/layout/activity_follower_page.xml" value="0.13229166666666667" />
+        <entry key="app/src/main/res/layout/activity_following_page.xml" value="0.13229166666666667" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.2546875" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.26721014492753625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.26721014492753625" />
@@ -32,6 +37,8 @@
         <entry key="app/src/main/res/layout/activity_me.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_signin.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/follower_page.xml" value="0.15572916666666667" />
+        <entry key="app/src/main/res/layout/following_page.xml" value="0.15572916666666667" />
         <entry key="app/src/main/res/layout/item_layout.xml" value="0.25" />
         <entry key="app/src/main/res/menu/bottom_navigation.xml" value="0.334375" />
       </map>
